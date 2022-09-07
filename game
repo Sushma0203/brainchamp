@@ -27,11 +27,7 @@ printf("WELCOME TO THE GAME >< \n\n\n");
 printf("PLEASE REGISTER BEFORE PLAYING :3 \n\n\n");
 
 select:
-	
-printf("\n");
-printf("______________________________________________________");
-printf("\n");
-printf("\n");
+printf("\n______________________________________________________\n\n");
 
 printf("press 1:To register \n\n");
 
@@ -51,18 +47,12 @@ printf("press 8:to delete  \n\n");
 
 printf("press 9:To end \n\n");
 
-printf("______________________________________________________");
-printf("\n\n\n");
+printf("______________________________________________________\n\n\n");
 scanf("%d%*c",&n);
 system("cls");
 
-
 switch (n)
 {
-
-
-
-
 case 1:
 f=fopen("name.txt","a");
 if(f==NULL)
@@ -84,35 +74,23 @@ printf("\nenter level(student/teacher)\n");
 scanf("%[^\n]",st.level);
 
 fprintf(f,"%s\n%d\n%c\n%s\n",st.name,st.age,st.gender,st.level);
-printf("\n");
-printf("______________________________________________________");
-printf("\n");
-
+printf("\n______________________________________________________\n");
 printf("\n\nRegistered Sucessfully");
-
 rewind(f);
-
 fclose(f);
-
 strcpy(per_name, st.name);
 }
 
 goto select;
-
-
-
-
-
 system("cls");
+
+
     case 2:
     	printf("\n");
     	printf("*****************************************************************************************************************\n");
-    printf("WARM UP GAME IS DIFFERENT FROM ACTUAL GAME\n\n");
-    
-    printf("You can keep on answering even if wrong answer is provided\n\n");
-    
-     printf("The following are the gk questions\n\n");
-     
+      printf("WARM UP GAME IS DIFFERENT FROM ACTUAL GAME\n\n");
+      printf("You can keep on answering even if wrong answer is provided\n\n");
+      printf("The following are the gk questions\n\n");
      printf("\n*******************************************************************************************************************\n");
      int i=0;
      
@@ -123,14 +101,14 @@ system("cls");
       printf(" 1.Dog \n\n 2.Snake \n\n 3.Camel \n\n 4.Lamp\n\n");
       scanf("%d",&a);
       if(a==3)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+     {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -141,14 +119,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Nepal \n\n 2.China \n\n 3.India \n\n 4.Tibet\n\n");
       scanf("%d",&a);
       if(a==4)
-{
+      {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+        }
+     else
+      {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -159,14 +137,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.1000 \n\n 2.1100 \n\n 3.900 \n\n 4.1500\n\n");
       scanf("%d",&a);
       if(a==1)
-{
+      {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+      }
+      else
+     {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -177,14 +155,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Fuel \n\n 2.Gas \n\n 3.Sun \n\n 4.Electricity\n\n");
       scanf("%d",&a);
       if(a==3)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+      }
+     else
+      {
+       printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -195,14 +173,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Hen \n\n 2.Ostrich \n\n 3.Parrot \n\n 4.Vulture\n\n");
       scanf("%d",&a);
       if(a==2)
-{
+      {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+      else
+     {
+     printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -213,14 +191,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Wilhelm Roentgen \n\n 2.Issac Newton \n\n 3.Paul G. Allen \n\n 4.Valentina Tereshkova\n\n");
       scanf("%d",&a);
       if(a==1)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+      {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -231,14 +209,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Iron \n\n 2.Ruby \n\n 3.Marbel \n\n 4.Diamond\n\n");
       scanf("%d",&a);
       if(a==4)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+     {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -249,14 +227,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Tally Stick \n\n 2.Antikythera mechanism \n\n 3.Planisphere \n\n 4.Astrolabe\n\n");
       scanf("%d",&a);
       if(a==2)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+     {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -267,14 +245,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Nuwakot \n\n 2.Godawari \n\n 3.Bardiya \n\n 4.Rara\n\n");
       scanf("%d",&a);
       if(a==1)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+      {
+      printf("\nSorry wrong answer !!");
+     }
      
      }
      
@@ -285,14 +263,14 @@ printf("\nSorry wrong answer !!");
       printf(" 1.Maize \n\n 2.Wheat \n\n 3.Rice \n\n 4.Tea\n\n");
       scanf("%d",&a);
       if(a==4)
-{
+     {
       printf("\nYou are correct ");
       i=i+1;
-}
-else
-{
-printf("\nSorry wrong answer !!");
-}
+     }
+     else
+     {
+     printf("\nSorry wrong answer !!");
+     }
      
      }
      printf("\n\n\n*******************************************************************************************************************\n");
@@ -300,8 +278,8 @@ printf("\nSorry wrong answer !!");
      printf("\n\n\nYOUR SCORE IS %d",i);
 
      
-goto select;
-system("cls");
+    goto select;
+    system("cls");
     case 3:
     {
 
