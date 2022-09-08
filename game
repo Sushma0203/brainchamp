@@ -11,14 +11,18 @@ char gender;
 char level[50];
 int score;
 }st,ut;
+
+void rule();
+void info();
+
 int main()
 {
 int n,t=0;
+char name[50];
 char per_name[50];
-char name[30];
-int p;
+int p,q;
 
-FILE *f,*a,*b,*c;
+FILE *f,*a,*b,*c,*d,*e;
 printf("WELCOME TO THE GAME >< \n\n\n");
 printf("PLEASE REGISTER BEFORE PLAYING :3 \n\n\n");
 
@@ -64,24 +68,14 @@ strcpy(per_name, st.name);
 goto select;
 system("cls");
 
-case 2:
-      printf("\n*******************************************************************************************************************\n");
-      printf("1)YOU NEED TO REGISTER BEFORE PLAYING.\n\n");
-      printf("\n2)You should solve the question by you ownself .\n\n\nHelp of second party will cause disqualification.\n\n\n");
-      printf("3)You should solve a question with in a minute.\n\n\n");
-      printf("4)There are one section of the test .\n\n\n");
-      printf("5)There are 10 question out of which it contents GK nad IQ\n\n\n");
-      printf("6)Follow the etiquette rules.\n\n\n");
-      printf("7)You are allowed to choose the answer only once.\n\n\n");
-      printf("\n*******************************************************************************************************************\n");
+case 2: 
+	
+ rule();
+      
  goto select;
 system("cls");
-case 3:
-        printf("\n*******************************************************************************************************************\n");
-        printf("\n\n1)To observe the score you need to register");
-        printf("\n\n2)The score for the warm up game will be mentioned below");
-        printf("\n\n3)To view the score of actual game press 7");
-	printf("\n\n4)cash prize will be giving out in from of check");
+case 3: 
+ info();
     goto select;
 system("cls");
 
@@ -414,7 +408,7 @@ int i,a[10],n=0;
   break;
    }
    }
-}
+   }
    printf("\n\n*******************************************************************************************************************\n");
    goto select;
    system("cls");
@@ -459,7 +453,8 @@ a = fopen("Every list.txt", "a");
 t=0;
 fprintf(a,"%s\n%d\n",ut.name,t);
 fclose(a);
-}
+void edit();
+
 printf("\n*******************************************************************************************************************\n");
 goto select;
 system("cls");
@@ -514,5 +509,29 @@ default:
              printf("\n*******************************************************************************************************************\n");
     break;
 }
+	}
 return 0;
 }
+
+void rule()
+{
+	printf("*******************************************************************************************************************\n");
+      printf("1)YOU NEED TO REGISTER BEFORE PLAYING.\n\n");
+      printf("\n2)You should solve the question by you ownself .\n\n\nHelp of second party will cause disqualification.\n\n\n");
+      printf("3)You should solve a question with in a minute.\n\n\n");
+      printf("4)There are one section of the test .\n\n\n");
+      printf("5)There are 10 question out of which it contents GK nad IQ\n\n\n");
+      printf("6)Follow the etiquette rules.\n\n\n");
+      printf("7)You are allowed to choose the answer only once.\n\n\n");
+      printf("\n*******************************************************************************************************************\n");
+	
+}
+void info()
+{
+   printf("*******************************************************************************************************************\n");
+        printf("\n\n1)To observe the score you need to register");
+        printf("\n\n2)The score for the warm up game will be mentioned below");
+        printf("\n\n3)To view the score of actual game press 7");
+	printf("\n\n4)cash prize will be giving out in from of check");	
+}
+	
