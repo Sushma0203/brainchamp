@@ -5,6 +5,7 @@
 #include<math.h>
 #include<time.h>
 struct su{
+	
 char name[50];
 int age;
 char gender;
@@ -14,15 +15,38 @@ int score;
 
 void rule();
 void info();
+void delay(float sec)
+{
+    // Converting time into milli_seconds
+    int milli_seconds = 1000 * sec;
+ 
+    // Storing start time
+    clock_t start_time = clock();
+ 
+    // looping till required time is not achieved
+    while (clock() < start_time + milli_seconds);
+
+    /* This Piece of code Was Taken from stackoverflow.com */
+}
 
 int main()
 {
-int n,t=0;
+int n,t=0,i;
 char name[50];
 char per_name[50];
 int p,q;
 
 FILE *f,*a,*b,*c,*d,*e;
+ system("cls");
+  /** LOADING SCREEN **/
+  	printf("*****************************************************************************************************************\n\n\n\n");
+    printf("Restricted Area Loading");
+    for(i=0; i<4; i++){
+        printf(".");
+        delay(1);
+    }
+    	printf("*****************************************************************************************************************\n");
+    system("cls");
 printf("WELCOME TO THE GAME >< \n\n\n");
 printf("PLEASE REGISTER BEFORE PLAYING :3 \n\n\n");
 
@@ -431,6 +455,15 @@ printf("\n\ngender:%c",ut.gender);
 printf("\n\nlevel:%s",ut.level);
 }
 fclose(f);
+e= fopen("Every list.txt","r");
+while(fscanf(e,"%[^\n]\n%d\n",&ut.name,&t)!= EOF)
+{
+if(strcmp(ut.name,per_name)==0){
+}
+}
+fclose(e);
+
+
 if(t>=1 && t<=9){
 printf("\n\nYOUR SCORE IS %d\n",t);
 printf("\n\nYOUR CASH IS %d000",t);
@@ -453,7 +486,7 @@ a = fopen("Every list.txt", "a");
 t=0;
 fprintf(a,"%s\n%d\n",ut.name,t);
 fclose(a);
-void edit();
+}
 
 printf("\n*******************************************************************************************************************\n");
 goto select;
@@ -509,9 +542,10 @@ default:
              printf("\n*******************************************************************************************************************\n");
     break;
 }
-	}
+	
 return 0;
 }
+
 
 void rule()
 {
